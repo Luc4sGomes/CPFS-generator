@@ -1,4 +1,4 @@
-class ValidaCPF {
+export default class ValidaCPF {
     constructor(cpfEnviado) {
       Object.defineProperty(this, "cpfLimpo", {
         enumerable: true,
@@ -44,3 +44,5 @@ class ValidaCPF {
       return this.cpfLimpo.charAt(0).repeat(11) === this.cpfLimpo;
     }
   }
+
+  console.log('oi estou aqui');
